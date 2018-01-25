@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--开启注解模式，当然，在注解模式下采取经典的方式配置bean也是没问题的-->
+    <context:annotation-config/>
+    <context:component-scan base-package="com"/>
+
+    <!-- Definition for textEditor bean without constructor-arg  -->
+    <bean id="textEditor" class="com.vo.TextEditor">
+    </bean>
+
+    <!-- Definition for spellChecker bean -->
+    <bean id="spellChecker" class="com.vo.SpellChecker">
+    </bean>
+
+    <!-- Definition for student bean -->
+    <bean id="student" class="com.vo.Student">
+        <property name="name"  value="Zara" />
+
+        <!-- try without passing age and check the result -->
+         <property name="age"  value="11"/>
+    </bean>
+    <bean id="helloWorld" class="com.vo.HelloWorld">
+        <property name="message" value="Hello World!"/>
+    </bean>
+    <!--<bean id="apple" clacom.demodemo.Apple"/>-->
+
+    <!--&lt;!&ndash;<bean id="d" clacom.vo="vo.Dept">&ndash;&gt;-->
+        <!--&lt;!&ndash;<constructor-arg value="10"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<constructor-arg value="开发部门"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
+
+    <!--<bean id="d" clacom.vo="vo.Dept">-->
+        <!--&lt;!&ndash;<constructor-arg index="1" value="开发部门"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<constructor-arg  index="0" value="10"/>&ndash;&gt;-->
+
+        <!--<property name="deptno" value="11"/>-->
+
+
+        <!--<property name="emps">-->
+            <!--<list>-->
+                <!--<ref bean="emp"/>-->
+                <!--<ref bean="emp1"/>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="emp" clacom.vo="vo.Emp" autowire="byType">-->
+        <!--<property name="empno" value="455"/>-->
+
+        <!--<property name="ename" value="fyb"/>-->
+
+    <!--</bean>-->
+    <!--<bean id="emp1" clacom.vo="vo.Emp">-->
+        <!--<property name="empno" value="200"/>-->
+        <!--<property name="dept" ref="d"/>-->
+        <!--<property name="ename" value="assaf"/>-->
+
+    <!--</bean>-->
+
+    <!--<bean id="company" clacom.vo="vo.Company">-->
+        <!--<property name="data">-->
+            <!--<array value-type="java.lang.Integer">-->
+                <!--<value>10</value>-->
+                <!--<value>111</value>-->
+                <!--<value>23</value>-->
+            <!--</array>-->
+        <!--</property>-->
+
+        <!--<property name="msg">-->
+            <!--<props>-->
+                <!--<prop key="vv">ssss</prop>-->
+                <!--<prop key="qqq">&#45;&#45;&#45;&#45;</prop>-->
+            <!--</props>-->
+        <!--</property>-->
+
+    <!--</bean>-->
+
+
+</beans>
