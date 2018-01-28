@@ -25,7 +25,7 @@
         <property name="name"  value="Zara" />
 
         <!-- try without passing age and check the result -->
-         <property name="age"  value="11"/>
+        <property name="age"  value="11"/>
     </bean>
     <bean id="helloWorld" class="com.vo.HelloWorld">
         <property name="message" value="Hello World!"/>
@@ -33,53 +33,53 @@
     <!--<bean id="apple" clacom.demodemo.Apple"/>-->
 
     <!--&lt;!&ndash;<bean id="d" clacom.vo="vo.Dept">&ndash;&gt;-->
-        <!--&lt;!&ndash;<constructor-arg value="10"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;<constructor-arg value="开发部门"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<constructor-arg value="10"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<constructor-arg value="开发部门"/>&ndash;&gt;-->
     <!--&lt;!&ndash;</bean>&ndash;&gt;-->
 
     <!--<bean id="d" clacom.vo="vo.Dept">-->
-        <!--&lt;!&ndash;<constructor-arg index="1" value="开发部门"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;<constructor-arg  index="0" value="10"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<constructor-arg index="1" value="开发部门"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<constructor-arg  index="0" value="10"/>&ndash;&gt;-->
 
-        <!--<property name="deptno" value="11"/>-->
+    <!--<property name="deptno" value="11"/>-->
 
 
-        <!--<property name="emps">-->
-            <!--<list>-->
-                <!--<ref bean="emp"/>-->
-                <!--<ref bean="emp1"/>-->
-            <!--</list>-->
-        <!--</property>-->
+    <!--<property name="emps">-->
+    <!--<list>-->
+    <!--<ref bean="emp"/>-->
+    <!--<ref bean="emp1"/>-->
+    <!--</list>-->
+    <!--</property>-->
     <!--</bean>-->
 
     <!--<bean id="emp" clacom.vo="vo.Emp" autowire="byType">-->
-        <!--<property name="empno" value="455"/>-->
+    <!--<property name="empno" value="455"/>-->
 
-        <!--<property name="ename" value="fyb"/>-->
+    <!--<property name="ename" value="fyb"/>-->
 
     <!--</bean>-->
     <!--<bean id="emp1" clacom.vo="vo.Emp">-->
-        <!--<property name="empno" value="200"/>-->
-        <!--<property name="dept" ref="d"/>-->
-        <!--<property name="ename" value="assaf"/>-->
+    <!--<property name="empno" value="200"/>-->
+    <!--<property name="dept" ref="d"/>-->
+    <!--<property name="ename" value="assaf"/>-->
 
     <!--</bean>-->
 
     <!--<bean id="company" clacom.vo="vo.Company">-->
-        <!--<property name="data">-->
-            <!--<array value-type="java.lang.Integer">-->
-                <!--<value>10</value>-->
-                <!--<value>111</value>-->
-                <!--<value>23</value>-->
-            <!--</array>-->
-        <!--</property>-->
+    <!--<property name="data">-->
+    <!--<array value-type="java.lang.Integer">-->
+    <!--<value>10</value>-->
+    <!--<value>111</value>-->
+    <!--<value>23</value>-->
+    <!--</array>-->
+    <!--</property>-->
 
-        <!--<property name="msg">-->
-            <!--<props>-->
-                <!--<prop key="vv">ssss</prop>-->
-                <!--<prop key="qqq">&#45;&#45;&#45;&#45;</prop>-->
-            <!--</props>-->
-        <!--</property>-->
+    <!--<property name="msg">-->
+    <!--<props>-->
+    <!--<prop key="vv">ssss</prop>-->
+    <!--<prop key="qqq">&#45;&#45;&#45;&#45;</prop>-->
+    <!--</props>-->
+    <!--</property>-->
 
     <!--</bean>-->
 

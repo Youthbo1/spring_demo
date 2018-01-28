@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!--开启注解模式，当然，在注解模式下采取经典的方式配置bean也是没问题的-->
+	<context:annotation-config/>
+	<context:component-scan base-package="com"/>
+    <!-- 告诉Spring在运行期间，创建
+     GregorianCalendar类型的对象，
+     编号为 calObj1 -->
+    <bean id="calObj1"
+          class="java.util.GregorianCalendar"/>
+    <bean id="list"
+          class="java.util.ArrayList"/>
+    <!-- Spring使用静态工厂方法创建Bean对象
+    Spring 会调用Calendar类的getInstance方法
+    创建Bean对象，Bean的类型是返回值类型-->
+    <bean id="calObj2"
+          class="java.util.Calendar"
+          factory-method="getInstance"/>
+
+
+
+	<bean id="hi" class="com.demo_1_28.Hi">
+		<property name="name" value="fyb"/>
+	</bean>
+
+
+
+
+
+</beans>
