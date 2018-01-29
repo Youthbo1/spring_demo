@@ -6,30 +6,34 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <bean id="hi" class="com.demo_1_28.Hi"/>
+    <!--<bean id="hi" class="com.demo_1_28.Hi">-->
+        <!--<property name="name" value="fyb"/>-->
+     <!--</bean>-->
 
     <!--开启注解模式，当然，在注解模式下采取经典的方式配置bean也是没问题的-->
     <context:annotation-config/>
-    <context:component-scan base-package="com"/>
+    <context:component-scan base-package="com.test_1_29.test2"/>
 
-    <!-- Definition for textEditor bean without constructor-arg  -->
-    <bean id="textEditor" class="com.vo.TextEditor">
-    </bean>
 
-    <!-- Definition for spellChecker bean -->
-    <bean id="spellChecker" class="com.vo.SpellChecker">
-    </bean>
 
-    <!-- Definition for student bean -->
-    <bean id="student" class="com.vo.Student">
-        <property name="name"  value="Zara" />
+    <!--&lt;!&ndash; Definition for textEditor bean without constructor-arg  &ndash;&gt;-->
+    <!--<bean id="textEditor" class="com.vo.TextEditor">-->
+    <!--</bean>-->
 
-        <!-- try without passing age and check the result -->
-         <property name="age"  value="11"/>
-    </bean>
-    <bean id="helloWorld" class="com.vo.HelloWorld">
-        <property name="message" value="Hello World!"/>
-    </bean>
+    <!--&lt;!&ndash; Definition for spellChecker bean &ndash;&gt;-->
+    <!--<bean id="spellChecker" class="com.vo.SpellChecker">-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; Definition for student bean &ndash;&gt;-->
+    <!--<bean id="student" class="com.vo.Student">-->
+        <!--<property name="name"  value="Zara" />-->
+
+        <!--&lt;!&ndash; try without passing age and check the result &ndash;&gt;-->
+         <!--<property name="age"  value="11"/>-->
+    <!--</bean>-->
+    <!--<bean id="helloWorld" class="com.vo.HelloWorld">-->
+        <!--<property name="message" value="Hello World!"/>-->
+    <!--</bean>-->
     <!--<bean id="apple" clacom.demodemo.Apple"/>-->
 
     <!--&lt;!&ndash;<bean id="d" clacom.vo="vo.Dept">&ndash;&gt;-->

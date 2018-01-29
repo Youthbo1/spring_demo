@@ -10,12 +10,23 @@
 
     <!--<bean id="hi" class="com.demo_1_28.Hi"/>-->
 
-    <import resource="classpath:spring-config.xml"/>
+    <!--<import resource="classpath:spring-config.xml"/>-->
     <!--开启注解模式，当然，在注解模式下采取经典的方式配置bean也是没问题的-->
     <context:annotation-config/>
     <context:component-scan base-package="com"/>
 
+    <bean id="userDao" class="com.test_1_29.dao.UserDAOImpl">
+        <property name="connection" value="获取数据库连接"/>
+    </bean>
 
+    <bean id="userService" class="com.test_1_29.service.UserServiceImpl">
+        <property name="dao" ref="userDao"/>
+    </bean>
+
+
+    <bean id="userAction" class="com.test_1_29.controller.UserAction">
+        <property name="service" ref="userService"/>
+    </bean>
 
 
 
