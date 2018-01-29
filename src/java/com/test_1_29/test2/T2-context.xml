@@ -12,6 +12,7 @@
 
     <!--<import resource="classpath:spring-config.xml"/>-->
     <!--开启注解模式，当然，在注解模式下采取经典的方式配置bean也是没问题的-->
+
     <context:annotation-config/>
     <context:component-scan base-package="com.test_1_29.test2"/>
 
